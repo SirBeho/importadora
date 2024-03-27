@@ -77,12 +77,12 @@ function cambiarColor(checkbox) {
   var label = document.getElementById(labelId);
   if (checkbox.checked) {
     label.classList.remove("bg-gray-400");
-    label.classList.add("bg-green-400");
+    label.classList.add("bg-blue-800");
   } else {
-    label.classList.remove("bg-green-400");
+    label.classList.remove("bg-blue-800");
     label.classList.add("bg-gray-400");
 
-    document.getElementById("categoria_0").classList.remove("bg-green-400");
+    document.getElementById("categoria_0").classList.remove("bg-blue-800");
     document.getElementById("categoria_0").classList.add("bg-gray-400");
     document.getElementById("categoria__0").checked = false;
 
@@ -101,10 +101,10 @@ function cambiarColor_all(checkbox_me) {
       if (checkbox_me.checked) {
         checkbox.checked = true;
         label.classList.remove("bg-gray-400");
-        label.classList.add("bg-green-400");
+        label.classList.add("bg-blue-800");
       } else {
         checkbox.checked = false;
-        label.classList.remove("bg-green-400");
+        label.classList.remove("bg-blue-800");
             label.classList.add("bg-gray-400");
       }
     });

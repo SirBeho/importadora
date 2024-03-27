@@ -18,9 +18,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             $persona = $persona-> fetch_assoc();
             $_SESSION['persona'] = $persona;
             $_SESSION['usuario'] = $persona;
-            header("Location: ../pages/dashboard.php");
-           
+            
+            if( $persona['permiso'] == 1){
+                header("Location: ../pages/dashboard_adm.php");
+            }else{
+                header("Location: ../pages/dashboard.php");
+            }
             exit;
+            
         } else {
             $_SESSION['login_email'] = $user;
             $_SESSION['error_message'] = "Usuario o contraseña incorecta";

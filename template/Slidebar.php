@@ -23,6 +23,65 @@
         <li class=" link block text-center whitespace-nowrap ">Menu Administracion</li>
 
         <?php if ($permiso  == 1) : ?>
+
+            
+
+
+            <li class=" hover:bg-white">
+                <a class="flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700 transform duration-300" href="./dashboard_adm.php">
+                    <div class="h-5 w-5"><img src="../svg/board.svg" alt="" srcset=""></div>
+                    <span class="hidden">Dashboard</span>
+
+                </a>
+            </li>
+
+            <li class="hover:bg-white">
+
+            <a class=" flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700  transform duration-300" href="./importaciones.php">
+                <div class="h-5 w-5"><img src="../svg/ship.svg" alt="" srcset=""></div>
+                <span class="hidden">Importaciones</span>
+            </a>
+            </li>
+
+            <li class="hover:bg-white">
+                    <a class=" flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700  transform duration-300" href="./resultado.php">
+                        <div class="h-5 w-5"><img src="../svg/list.svg" alt="" srcset=""></div>
+                        <span class="hidden">Listado</span>
+                    </a>
+            </li>
+
+
+            <li class="hover:bg-white flex">
+                <a class="flex w-full gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700 transform duration-300" href="./registro.php">
+                    <div class="h-5 w-5"><img src="../svg/wrench.svg" alt="" srcset=""></div>
+                    <span class="hidden justify-between ">Mantenimeintos </span>
+                </a>
+                <img aria-controls="lista_clases" data-collapse-toggle="lista_clases" class="cursor-pointer bg-gray-400 dark:bg-gray-700 ms-auto w-10 px-2 dark:hover:bg-gray-500 hover:bg-gray-500" src="../svg/arrow2.svg" alt="">
+
+            </li>
+            <ul data-collapse-toggle="lista_clases" id="lista_clases" class="hidden bg-gray-500 ps-2 border-y overflow-hidden  border-y-gray-500">
+               
+                
+            
+                <li>
+                    <a href="./registro.php" class="flex w-full gap-2 items-center whitespace-nowrap px-1 py-2 bg-gray-400  transform duration-300">Vehiculos</a>
+                </li>
+                <li>
+                    <a href="./mantenimiento.php?opc=marcas"  class="flex w-full gap-2 items-center whitespace-nowrap px-1 py-2 bg-gray-400  transform duration-300">Marcas</a>
+                </li>
+                <li>
+                    <a href="./mantenimiento.php?opc=modelos" class="flex w-full gap-2 items-center whitespace-nowrap px-1 py-2 bg-gray-400  transform duration-300">Modelos</a>
+                </li>
+                <li>
+                    <a href="./mantenimiento.php?opc=caracteristicas"  class="flex w-full gap-2 items-center whitespace-nowrap px-1 py-2 bg-gray-400  transform duration-300">Caracteristica</a>
+                </li>
+                <li>
+                    <a href="./mantenimiento.php?opc=categorias"  class="flex w-full gap-2 items-center whitespace-nowrap px-1 py-2 bg-gray-400  transform duration-300">Categorias</a>
+                </li>
+                
+            </ul>
+            
+            <!-- 
             <li class="hover:bg-white">
 
                 <a class=" flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700  transform duration-300" href="./permisos.php">
@@ -53,24 +112,24 @@
                     <span class="hidden">Clases</span>
 
                 </a>
-            </li>
+            </li> -->
 
         <?php endif; ?>
 
         <?php if ($permiso  == 2) : ?>
 
             <li class=" hover:bg-white">
-                <a class="flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700 transform duration-300" href="./dashboard_us.php">
+                <a class="flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700 transform duration-300" href="./dashboard.php">
                     <div class="h-5 w-5"><img src="../svg/search.svg" alt="" srcset=""></div>
-                    <span class="hidden">Buscar Vehiculos</span>
+                    <span class="hidden">Dashboard</span>
 
                 </a>
             </li>
 
             <li class="hover:bg-white flex">
-                <a class="flex w-full gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700 transform duration-300" href="./clases_m.php">
-                    <div class="h-5 w-5"><img src="../svg/classroom.svg" alt="" srcset=""></div>
-                    <span class="hidden justify-between ">Mis Clases </span>
+                <a class="flex w-full gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700 transform duration-300" href="">
+                    <div class="h-5 w-5"><img src="../svg/file.svg" alt="" srcset=""></div>
+                    <span class="hidden justify-between ">Pedidos </span>
                 </a>
                 <img aria-controls="lista_clases" data-collapse-toggle="lista_clases" class="cursor-pointer bg-gray-400 dark:bg-gray-700 ms-auto w-10 px-2 dark:hover:bg-gray-500 hover:bg-gray-500" src="../svg/arrow2.svg" alt="">
 
