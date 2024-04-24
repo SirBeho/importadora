@@ -96,7 +96,7 @@ extract($resultado);
 
             
             <div class="flex gap-4 h-full w-full rounded-lg overflow-hidden">
-                    <img class="w-full h-full object-cover" src="../pictures/carro_11" alt="">
+                    <img class="w-full h-full object-cover" src="../pictures/carro_<?php echo $_POST["id"] ?>" alt="">
             </div>
             
 

@@ -29,7 +29,7 @@ $indicadores = array(
 
 ?>
 
-<main class="h-full  w-full flex flex-col bg-gray-200 dark:bg-gray-800 dark:text-white ">
+<main class="h-full  w-full flex flex-col bg-gray-200 dark:bg-gray-800 dark:text-white  ">
     <div class=" flex justify-between  bg-white p-2 px-6 shadow-md ">
         <div class="flex gap-3 text-black text-2xl  ">
             <button onclick="window.history.back()" class="hover:scale-110">
@@ -129,7 +129,7 @@ $indicadores = array(
                                 <img class='w-full h-full' src="../svg/rotate.svg" alt="icono de índice de rotación" />
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h2 class="font-bold uppercase text-gray-600">Índice de Rotación de Inventarios</h2>
+                                <h2 class="font-bold uppercase text-gray-600">Índice de Rotación de Inv.</h2>
                                 <p class="font-bold text-2xl">
                                     <?php echo $indicadores['indice_rotacion_inventario']; ?>
                                 </p>

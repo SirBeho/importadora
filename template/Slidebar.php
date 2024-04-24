@@ -44,9 +44,13 @@
             </li>
 
             <li class="hover:bg-white">
-                    <a class=" flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700  transform duration-300" href="./resultado.php">
+            
+
+                    <a class=" flex gap-2 items-center whitespace-nowrap py-2 bg-gray-400 dark:bg-gray-700  transform duration-300" href="../php/buscar.php">
                         <div class="h-5 w-5"><img src="../svg/list.svg" alt="" srcset=""></div>
-                        <span class="hidden">Listado</span>
+                        <form action="../php/buscar.php" method="post">
+                            <button type="submit">Listado</button>
+                        </form>
                     </a>
             </li>
 
@@ -131,7 +135,6 @@
                     <div class="h-5 w-5"><img src="../svg/file.svg" alt="" srcset=""></div>
                     <span class="hidden justify-between ">Pedidos </span>
                 </a>
-                <img aria-controls="lista_clases" data-collapse-toggle="lista_clases" class="cursor-pointer bg-gray-400 dark:bg-gray-700 ms-auto w-10 px-2 dark:hover:bg-gray-500 hover:bg-gray-500" src="../svg/arrow2.svg" alt="">
 
             </li>
             <ul data-collapse-toggle="lista_clases" id="lista_clases" class="hidden bg-gray-500 ps-2 border-y overflow-hidden  border-y-gray-500">

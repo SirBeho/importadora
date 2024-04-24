@@ -54,16 +54,14 @@ $(document).ready(function() {
 <div class="h-96 flex-1 w-full  bg-gray-200 dark:bg-gray-800 dark:text-white ">
     <div class="w-full  p-3  h-full ">
 
-        <div class="rounded-lg shadow-sm bg-white w-full h-full flex flex-col p-3 overflow-hidden ">
+    <div class="w-full  flex gap-5 items-center relative">
 
-            <div class="w-full  flex gap-5 items-center relative">
+                <div class="flex gap-2">
 
-                <div class="flex gap-5">
-
-                    <button id="marcas" mostrar="#marcas" class="activar bg-orange-400 rounded-md p-2 ">Marcas</button>
-                    <button id="modelos" mostrar="#modelos" class="activar bg-orange-400 rounded-md p-2">Modelos</button>
-                    <button id='caracteristicas' mostrar="#caracteristica" class="activar bg-orange-400 rounded-md p-2">Caracteristica</button>
-                    <button id="categorias" mostrar="#categoria" class="activar bg-orange-400 rounded-md p-2">Categoria</button>
+                    <button id="marcas" mostrar="#marcas" class="activar bg-gray-400 rounded-t-md p-2 w-28 ">Marcas</button>
+                    <button id="modelos" mostrar="#modelos" class="activar bg-gray-400 rounded-t-md p-2 w-28">Modelos</button>
+                    <button id='caracteristicas' mostrar="#caracteristica" class="activar bg-gray-400 rounded-t-md p-2 w-28">Caracteristicas</button>
+                    <button id="categorias" mostrar="#categoria" class="activar bg-gray-400 rounded-t-md p-2 w-28">Categorias</button>
 
                 </div>
 
@@ -78,6 +76,11 @@ $(document).ready(function() {
                 }
                 ?>
             </div>
+
+        <div class="rounded-lg rounded-tl-none shadow-sm bg-white w-full  flex flex-col p-3  ">
+
+            
+            
             <div id="marcas" class="contenedor ">
                 <div class="flex justify-end">
                     <button class="flex items-cent gap-2 bg-blue-500 p-2 mb-3 rounded-md text-white"
@@ -91,9 +94,9 @@ $(document).ready(function() {
                 <table id="table_marcas" class="display table bg-gray-50 py-2 ">
                     <thead>
                         <tr>
-                            <th>id</th>
+                            <th>Id</th>
                             <th>Marca</th>
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -135,15 +138,15 @@ $(document).ready(function() {
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>id</th>
+                            <th>Id</th>
                             <th>Marca</th>
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </tfoot>
                 </table>
             </div>
 
-            <div id="modelos" class="contenedor hidden">
+            <div id="modelos" class="contenedor hidden ">
                 <div class="flex justify-end">
                     <button class="flex items-cent gap-2 bg-blue-500 p-2  mb-3 rounded-md text-white"
                         data-modal-target="modelo-modal" data-modal-toggle="modelo-modal">
@@ -156,10 +159,10 @@ $(document).ready(function() {
                 <table id="table_modelos" class=" display table bg-gray-50 py-2 ">
                     <thead>
                         <tr>
-                            <th>id</th>
+                            <th>Id</th>
                             <th>Modelo</th>
                             <th>Marca</th>
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -202,10 +205,10 @@ $(document).ready(function() {
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>id</th>
+                            <th>Id</th>
                             <th>Modelo</th>
                             <th>Marca</th>
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -224,10 +227,10 @@ $(document).ready(function() {
                 <table id="table_caracteristica" class=" display table bg-gray-50 py-2   ">
                     <thead>
                         <tr>
-                            <th>id</th>
-                            <th>caracteristica</th>
+                            <th>Id</th>
+                            <th>Caracteristica</th>
 
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -274,7 +277,7 @@ $(document).ready(function() {
                             <th>id</th>
                             <th>caracteristica</th>
 
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -294,9 +297,9 @@ $(document).ready(function() {
                     <thead>
                         <tr>
                             <th>id</th>
-                            <th>categoria</th>
+                            <th>Categoria</th>
 
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -342,20 +345,11 @@ $(document).ready(function() {
                             <th>id</th>
                             <th>categoria</th>
 
-                            <th>Accion</th>
+                            <th>Opciones</th>
                         </tr>
                     </tfoot>
                 </table>
             </div>
-
-
-
-
-
-
-
-
-
 
 
         </div>

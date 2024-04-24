@@ -50,7 +50,7 @@ while ($datos = $favoritos->fetch_assoc()) {
                                     <label class="flex flex-col w-full">
                                         <span>Marca</span>
                                         <select id="marca" onchange="updateModelo()" name="marca" placeholder="Marca">
-                                            <option value="" selected>Marca</option>
+                                            <option value="" selected>Todas</option>
                                             <?php
                                         if ($marcas) {
                                             if ($marcas->num_rows > 0) {
@@ -68,7 +68,7 @@ while ($datos = $favoritos->fetch_assoc()) {
                                     <label class="flex flex-col w-full">
                                         <span>Modelo</span>
                                         <select id="modelo" name="modelo" placeholder="Modelo">
-                                            <option value="" selected>Modelo</option>
+                                            <option value="" selected>Todos</option>
                                         </select>
                                     </label>
                                     <label class="flex flex-col w-full">

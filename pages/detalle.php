@@ -62,10 +62,10 @@ extract($resultado);
                 <div class="h-full flex flex-col w-2/5 ">
                     <div class="mt-2 flex gap-4 h-24">
                         <div class="w-full">
-                            <img class="w-full h-full object-cover" src="../pictures/carro_11" alt="">
+                            <img class="w-full h-full object-cover" src="../pictures/carro_<?php echo $_GET["id"] ?>" alt="">
                         </div>
                         <div class="w-full">
-                            <img class="w-full h-full object-cover" src="../pictures/carro_14" alt="">
+                            <img class="w-full h-full object-cover" src="../pictures/carro_<?php echo $_GET["id"] ?>" alt="">
                         </div>
                     </div>
 
@@ -75,31 +75,31 @@ extract($resultado);
                         <div class="relative h-full overflow-hidden rounded-lg ">
                             <!-- Item 1 -->
                             <div class="hidden duration-700 ease-in-out h-full" data-carousel-item="active">
-                                <img src="../pictures/carro_11"
+                                <img src="../pictures/carro_<?php echo $_GET["id"] ?>"
                                     class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
                             <!-- Item 2 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="../pictures/carro_11"
+                                <img src="../pictures/carro_<?php echo $_GET["id"] ?>"
                                     class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
                             <!-- Item 3 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="../pictures/carro_11"
+                                <img src="../pictures/carro_<?php echo $_GET["id"] ?>"
                                     class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
                             <!-- Item 4 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="../pictures/carro_11"
+                                <img src="../pictures/carro_<?php echo $_GET["id"] ?>"
                                     class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
                             <!-- Item 5 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="../pictures/carro_11"
+                                <img src="../pictures/carro_<?php echo $_GET["id"] ?>"
                                     class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
@@ -150,10 +150,10 @@ extract($resultado);
 
                     <div class="mt-2 flex gap-4 h-24">
                         <div class="w-full">
-                            <img class="w-full h-full object-cover" src="../pictures/carro_11" alt="">
+                            <img class="w-full h-full object-cover" src="../pictures/carro_<?php echo $_GET["id"] ?>" alt="">
                         </div>
                         <div class="w-full">
-                            <img class="w-full h-full object-cover" src="../pictures/carro_14" alt="">
+                            <img class="w-full h-full object-cover" src="../pictures/carro_<?php echo $_GET["id"] ?>" alt="">
                         </div>
                     </div>
                 </div>

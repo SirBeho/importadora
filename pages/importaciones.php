@@ -1,15 +1,7 @@
 <?php 
 
-
 include '../template/header.php';
 
-
-if (!isset($_SESSION['query'])) {
-    header("Location: ./home.php");
-    die();
-}
-
-extract($_SESSION['post']);
 $resultado = $mysqli->query("select * from vehiculos_venta left JOIN vehiculos_modelos on idVehiculos_Modelos = vehiculo_modelo  join vehiculos_marcas on vehiculos_modelos.marca = vehiculos_marcas.idVehiculos_Marca join vehiculo_categoria on vehiculos_venta.vehiculo_Categoria = vehiculo_categoria.idVehiculo_Categoria where disponible = 0");
 $marcas = $mysqli->query("SELECT * FROM `vehiculos_marcas`");
 $modelo = $mysqli->query("SELECT * FROM `vehiculos_modelos`");
@@ -22,13 +14,12 @@ while ($datos = $favoritos->fetch_assoc()) {
 
 
 $estados_vehiculos = array(
-    'En tránsito' => 7,
-    'En aduana' => 3,
-    'En proceso de inspección' => 2,
-    'En mantenimiento' => 5,
-    'En reparación' => 10,
     'Por recibir' => 1,
+    'En proceso de inspección' => 2,
+    'En aduana' => 3,
     'En espera de documentos' => 4,
+    'En tránsito' => 7,
+    'En mantenimiento' => 10,
     'En subasta' => 15
 );
 
@@ -85,7 +76,7 @@ $estados_vehiculos = array(
                         
                     </div>
 
-                    <div class="bg-orange-500 text-white p-2 absolute bottom-5 right-5 rounded-md">
+                    <div class="bg-orange-500 text-white p-2 absolute bottom-5 right-5 rounded-md hover:bg-orange-700">
                         Ver Detalles
                     </div>
                 </a>

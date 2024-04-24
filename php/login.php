@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             
         } else {
             $_SESSION['login_email'] = $user;
-            $_SESSION['error_message'] = "Usuario o contraseña incorecta";
+            $_SESSION['error_message'] = "Usuario o contraseña incorrecta";
             header("Location: ../index.php");
             exit;
         }  

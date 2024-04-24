@@ -27,7 +27,7 @@ include("../functions/etiquetas.php");
     <link href="../DataTables/datatables.min.css" rel="stylesheet">
     <link href="../css/output.css" rel="stylesheet">
     <link href="../css/table.css" rel="stylesheet">
-
+    
 
 </head>
 
@@ -46,7 +46,7 @@ include("../functions/etiquetas.php");
             <nav
                 class="fixed flex z-20 left-0 top-0    min-h-[3.5rem]  bg-[#f77c3e] dark:bg-gray-700 shadow-white border-white w-screen ">
 
-                <div class="flex items-center gap-2 h-14 px-4 py-2 border-e border-white min-w-[15rem] bg-[#f77c3e]">
+                <div class="flex items-center gap-2 h-14 px-4 py-2  border-white min-w-[15rem] bg-[#f77c3e]">
                     <div class="overflow-hidden h-full ">
                         <img class=" w-full h-full" src="../pictures/auto.png" alt="">
                     </div>
@@ -54,17 +54,17 @@ include("../functions/etiquetas.php");
                 </div>
 
 
-                <div class="flex w-full justify-between  px-4">
+                <div class="flex w-full justify-end  px-4">
 
-                    <div class=" flex gap-5 items-center text-white ">
+                   <!--  <div class=" flex gap-5 items-center text-white ">
                         <img id="toggle" class="cursor-pointer" src="../svg/bars.svg" alt="" srcset="">
                         <a href="./home.php" class="flex">
-                            <!-- <h1 class=" mr-2">HOME </h1> -->
+                           
 
                             <img src="../svg/home.svg" alt="" srcset="">
 
                         </a>
-                    </div>
+                    </div> -->
 
                     <div id="control-menu" class="flex items-center gap-2 cursor-pointer">
                         <div class="h-8 w-8 overflow-hidden rounded-lg">

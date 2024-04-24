@@ -9,7 +9,7 @@
             </svg>
         </button>
 
-        <h3 id="titutlo" class="pb-2 mb-4 border-b-2 text-xl font-medium text-gray-900 dark:text-white px-6 lg:px-8">Retiro de asignaturas</h3>
+        <h3 id="titutlo" class="pb-2 mb-4 border-b-2 text-xl font-medium text-gray-900 dark:text-white px-6 lg:px-8">Eliminar</h3>
 
         <form action="#" id="modalDelete" method="post" class="space-y-6 relative px-6 lg:px-8">
             <label  class="block text-lg font-medium text-gray-900 dark:text-white">
@@ -20,7 +20,7 @@
             <input type="hidden" name="accion">
             <input type="hidden" name="id">
             <div id="btn_modal" class="flex justify-end gap-2 mt-4">
-                <button name="boton" type="submit" class="w-fit text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Retirar Materia</button>
+                <button name="boton" type="submit" class="w-fit text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Eliminar</button>
                 <button type="button" data-modal-hide="delete-modal" class="w-fit text-white bg-gray-600 hover:bg-gray-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Cancelar</button>
             </div>
         </form>

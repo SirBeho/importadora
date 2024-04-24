@@ -63,12 +63,12 @@ if (enlaces) {
             // Restaurar el color original de todos los enlaces
             enlaces.forEach(enlace2 => {
                 enlace2.classList.add('bg-orange-400');
-                enlace2.classList.remove('bg-orange-200');
+                enlace2.classList.remove('bg-white');
             });
 
             // Cambiar color del enlace clickeado
             enlace.classList.remove('bg-orange-400');
-            enlace.classList.add('bg-orange-200');
+            enlace.classList.add('bg-white');
 
             const mostrarId = enlace.getAttribute('mostrar');
             const contenidos = document.querySelectorAll('div.contenedor');

@@ -56,14 +56,14 @@ if (isset($_GET["id"])) {
                
 
                 <?php else : ?>
-                <h1 class="text-3xl font-bold ">Registrar Vehiculo</h1>
+                <h1 class="text-3xl font-bold ">Registrar Vehículo</h1>
                 <?php endif; ?>
             </div>
 
             <form action="../controller/vehiculo.php<?php if (isset($_GET["id"])) echo '?id='.$_GET["id"]; ?>"
                 method="post" class="flex px-5 gap-6  mt-4 h-fit ">
                 <div class="h-full flex flex-col w-2/5 ">
-                    <span class="text-xl font-bold border-b-2 border-blue-600 mb-2">Imagenes</span>
+                    <span class="text-xl font-bold border-b-2 border-blue-600 mb-2">Imágenes</span>
                     <div class="mt-2 flex gap-4 h-24">
                         <div class="w-full bg-gray-200 rounded-md overflow-hidden">
                             <img class="w-full h-full object-cover" src="../pictures/carro_14" alt="">
@@ -91,16 +91,16 @@ if (isset($_GET["id"])) {
                     </label>
 
                     <label class="flex flex-col my-2">
-                        <span>Descripcion</span>
-                        <textarea rows="5" class="border border-neutral-400 rounded-md" name="Descripcion"
-                            placeholder="Escriba una descripcion sobre su vehiculo "></textarea>
+                        <span>Descripción</span>
+                        <textarea rows="5" class="border border-neutral-400 rounded-md p-1" name="Descripcion"
+                            placeholder="Escriba una descripción  sobre su vehiculo "></textarea>
                     </label>
 
                     
                 </div>
 
                 <div class=" w-fit">
-                    <span class="text-xl block  font-bold border-b-2 border-blue-600 mb-2">Datos del Vehiculo</span>
+                    <span class="text-xl block  font-bold border-b-2 border-blue-600 mb-2">Datos del Vehículo</span>
                     
                     
                    
@@ -114,12 +114,12 @@ if (isset($_GET["id"])) {
 
                                 <label>
                                     <span>Matricula</span></br>
-                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="matricula" placeholder="matricula"
+                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="matricula" placeholder="Matricula"
                                         value="<?php if (isset($vehiculo_matricula)) echo $vehiculo_matricula; ?>">
                                 </label>
                                 <label>
                                     <span>Color</span></br>
-                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="color" placeholder="color"
+                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="color" placeholder="Color"
                                         value="<?php if (isset($color)) echo $color; ?>">
                                 </label>
 
@@ -155,7 +155,7 @@ if (isset($_GET["id"])) {
 
 
                                 <label>
-                                    <span>Tipo de Vehiculo</span><br>
+                                    <span>Tipo de vehículo</span><br>
                                     <select id="categoria" class="border border-neutral-400 rounded-md ps-2 w-full" name="categoria">
 
                                         <option value="" <?php if (!isset($vehiculo_Categoria)) echo 'selected'; ?>>Tipo
@@ -187,7 +187,7 @@ if (isset($_GET["id"])) {
                             <div class="flex gap-4 items-center my-4  ">
                                 <span class=" w-fit ">Estado:</span>
                                 <div
-                                    class=" flex text-lg w-full  gap-4 outline-1 outline-neutral-400  outline p-1 rounded-md">
+                                    class=" flex text-lg w-full  gap-4 outline-0 outline-neutral-400  outline p-1 rounded-md">
 
                                     <label>
                                     <input required class="w-fit" type="radio" name="condicion[]" value="1"
@@ -203,7 +203,7 @@ if (isset($_GET["id"])) {
                             <label class="flex gap-5">
                                 <span>Precio:</span>
                                 <input required  class="border border-neutral-400 rounded-md ps-2 w-full" type="number" name="precio" value="<?php if (isset($precio)) echo  $precio; ?>"
-                                    placeholder="Precio ">
+                                    placeholder="Precio RD$ ">
                             </label>
 
                         </div>
@@ -214,14 +214,14 @@ if (isset($_GET["id"])) {
                                 <label>
                                     <span>Motor</span></br>
                                     <input required  class="border border-neutral-400 rounded-md ps-2 w-full" type="text" name="motor"
-                                        value="<?php if (isset($precio)) echo  $motor; ?>" placeholder="motor ">
+                                        value="<?php if (isset($precio)) echo  $motor; ?>" placeholder="Motor ">
                                 </label>
 
                                 <label>
-                                    <span>Trasmision</span></br>
+                                    <span>Trasmisión</span></br>
                                     <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="trasmision"
                                         value="<?php if (isset($precio)) echo  $trasmision; ?>"
-                                        placeholder="Trasmision ">
+                                        placeholder="Trasmisión ">
                                 </label>
                                 <label>
                                     <span>Traccion</span></br>
@@ -230,13 +230,13 @@ if (isset($_GET["id"])) {
                                 </label>
                                 <label>
                                     <span>Pasajeros</span></br>
-                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="pasajeros"
+                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="number" name="pasajeros"
                                         value="<?php if (isset($pasajeros)) echo  $pasajeros; ?>"
                                         placeholder="Pasajeros ">
                                 </label>
                                 <label>
                                     <span>Puertas</span></br>
-                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="text" name="puertas"
+                                    <input class="border border-neutral-400 rounded-md ps-2 w-full" required type="number" name="puertas"
                                         value="<?php if (isset($puertas)) echo  $puertas; ?>" placeholder="Puertas ">
                                 </label>
                             </div>
@@ -246,7 +246,7 @@ if (isset($_GET["id"])) {
 
 
                 <div>
-                    <span class="text-xl block  font-bold border-b-2 border-blue-600 mb-2">caracteristicas</span>
+                    <span class="text-xl block  font-bold border-b-2 border-blue-600 mb-2">Características</span>
                     <div class="grid grid-cols-2 gap-1  max-w-md  mt-3 ">
 
                         <?php
@@ -279,7 +279,7 @@ if (isset($_GET["id"])) {
                
                 <button class="w-fit px-5 flex items-center gap-2   text-center  py-4 mt-5 bg-orange-600 rounded-lg text-sm  font-semibold text-white"
                     type="submit"> <svg class="h-12 w-12 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M171.3 96H224v96H111.3l30.4-75.9C146.5 104 158.2 96 171.3 96zM272 192V96h81.2c9.7 0 18.9 4.4 25 12l67.2 84H272zm256.2 1L428.2 68c-18.2-22.8-45.8-36-75-36H171.3c-39.3 0-74.6 23.9-89.1 60.3L40.6 196.4C16.8 205.8 0 228.9 0 256V368c0 17.7 14.3 32 32 32H65.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H385.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H608c17.7 0 32-14.3 32-32V320c0-65.2-48.8-119-111.8-127zM434.7 368a48 48 0 1 1 90.5 32 48 48 0 1 1 -90.5-32zM160 336a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
-                    Guardar Vehiculo</a>
+                    Guardar Vehículo</a>
             </div>
 
         </div>

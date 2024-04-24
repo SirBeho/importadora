@@ -3,6 +3,14 @@ module.exports = {
   content: ["**/*.{html,js,php}","./*.{html,js,php}","./node_modules/flowbite/**/*.js","./src/**/*.{html,js}","*.{html,js}"],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      'sans': ['Inter', 'sans-serif'],
+      'serif': ['Merriweather', 'serif'],
+      'mono': ['Roboto Mono', 'monospace'],
+      'Kanit': ['Kanit', 'sans-serif'],
+      'emoji': ['Emoji', 'sans-serif'],
+    },
+
     extend: {
       screens: {
         'sx': '520px',
