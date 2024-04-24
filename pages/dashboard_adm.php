@@ -49,7 +49,7 @@ $indicadores = array(
       
 
         <div class=" bg-white  rounded-lg shadow-md mb-4 p-2">
-            <span class="block text-3xl font-bold my-2 border-b-2 border-blue-600 ">Indicadores</span>
+            <span class="block text-2xl font-bold my-2 border-b-2 border-blue-600 ">Indicadores</span>
 
             <div class="flex flex-wrap">
                 <!-- Métrica de Vehículos en Almacén -->

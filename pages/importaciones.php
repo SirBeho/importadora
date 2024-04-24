@@ -44,7 +44,7 @@ $estados_vehiculos = array(
     <div class="w-full  p-3  h-full ">
 
         <div class="rounded-lg shadow-sm bg-white w-full h-full flex flex-col p-3 overflow-hidden ">
-            <span class=" block w-full text-3xl font-bold border-b-2 border-blue-600">Vehiculos en proceso de
+            <span class=" block w-full text-2xl font-bold border-b-2 border-blue-600">Vehiculos en proceso de
                 importacion</span>
             <div class="grid grid-cols-1 gap-5 p-2 w-full h-full max-h-full  overflow-y-scroll ">
                 <?php
